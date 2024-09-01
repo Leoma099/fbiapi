@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FBI</title>
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container" id="load">
+        <table id="example" class="content-table">
+            <thead>
+                <tr>
+                    <th>TITLE</th>
+                    <th>NATIONALITY</th>
+                    <th>SEX</th>
+                    <th>STATUS</th>
+                    <th>DESCRIPTION</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="dataListItems"></tbody>
+        </table>
+        <div>
+            <button onclick="prevPage()">Previous</button>
+            <span id="currentPage">Page 1 of 50</span> <!-- Adjust total pages dynamically -->
+            <button onclick="nextPage()">Next</button>
+        </div>
+
+    </div>
+    <script src="/functionality.js"></script>
+</body>
+</html>
